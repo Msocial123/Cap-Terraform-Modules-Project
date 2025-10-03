@@ -19,4 +19,8 @@ aws dynamodb create-table \
   --key-schema AttributeName=LockID,KeyType=HASH \
   --billing-mode PAY_PER_REQUEST \
   --region eu-north-1
-
+******************************************
+cd Terraform-Modules
+terraform init -migrate-state
+terraform plan -var-file="terraform.tfvars"
+terraform apply -var-file="terraform.tfvars"
