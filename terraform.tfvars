@@ -1,0 +1,10 @@
+region          = "eu-north-1"
+ami             = "ami-081cc9c313bbd5364"
+key_name        = "Murali-Ansible-Key"
+instance_name   = "Murali-WebServer-Modules"
+reference_name  = "web"
+vpc_name        = "Murali-Clahan-VPC"
+vpc_cidr        = "10.0.0.0/16"
+vpc_tenancy     = "default"
+enable_public_ip = true
+vpc_dns_support = true
